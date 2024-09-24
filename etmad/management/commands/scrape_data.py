@@ -6,7 +6,7 @@ from django.core.management.base import BaseCommand
 from etmad.models import Tender  
 
 # Set up Django environment  
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myproject.settings')  
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project.settings')  
 django.setup()  
 
 class Command(BaseCommand):  

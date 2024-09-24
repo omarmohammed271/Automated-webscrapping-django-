@@ -1,0 +1,15 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Scraped Data</title>  
+</head>  
+<body>  
+    <h1>Scraped Data</h1>  
+    <ul>  
+        {% for item in data %}  
+            <li><a href="{{ item.link }}">{{ item.title }}</a></li>  
+        {% endfor %}  
+    </ul>  
+</body>  
+</html>
