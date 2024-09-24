@@ -9,6 +9,11 @@
     <ul>  
         {% for item in data %}  
             <li><a href="{{ item.link }}">{{ item.title }}</a></li>  
+            <li>{{item.price}}</li>  
+            <li>From :{{item.date}}</li>  
+            <li>To Date Line :{{item.dateline}}</li>  
+            <li>-------------------------------</li>  
+
         {% endfor %}  
     </ul>  
 </body>  

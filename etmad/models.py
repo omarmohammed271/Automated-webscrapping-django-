@@ -8,6 +8,7 @@ class Tender(models.Model):
     price = models.CharField( max_length=50)
     date = models.DateField()
     dateline = models.DateField()
+    link = models.URLField( max_length=200)
 
     class Meta:
         verbose_name = ("Tender")

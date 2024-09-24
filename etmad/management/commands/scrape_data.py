@@ -14,6 +14,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):  
         session = HTMLSession()  
+        
         for i in range(1,50):
         # URL of the page you want to scrape  
             url = f'https://tenders.etimad.sa/Tender/AllTendersForVisitor?PageNumber={i}'  
@@ -53,7 +54,7 @@ class Command(BaseCommand):
 
                 Tender.objects.update_or_create(
                     ref_number=ref_number,title=title,price=price,
-                    date = date,dateline=dateline
+                    date = date,dateline=dateline,link=new_link
                 )
                 
                 

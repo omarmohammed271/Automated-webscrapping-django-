@@ -5,7 +5,7 @@ from django.conf import settings
 from etmad.tasks import scrape_data_task 
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project.settings')  
-app = Celery('myproject')  
+app = Celery('project')  
 app.config_from_object('django.conf:settings', namespace='CELERY')  
 app.autodiscover_tasks()  
 
